@@ -11,7 +11,8 @@
     {% render 'meta-tags' %}
 
     {{ content_for_header }}
-  </head>
+  {% include 'store-credit-launcher' %}
+</head>
 
   <body>
     {% sections 'header-group' %}
@@ -19,5 +20,6 @@
     {{ content_for_layout }}
 
     {% sections 'footer-group' %}
-  </body>
+  {% include 'store-credit-launcher' %}
+</body>
 </html>
